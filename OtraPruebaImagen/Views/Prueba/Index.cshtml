@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<p>
+    @using (Html.BeginForm("Create", "Prueba", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <label for="file">Seleccionar Imagen Image:</label>
+        <input type="file" name="file" id="file" accept="Image/jpeg, Image/png" />
+        <input type="submit" />
+    }
+
+    <h1>@ViewBag.Message</h1>
+
+</p>
